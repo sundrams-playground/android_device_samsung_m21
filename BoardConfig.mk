@@ -14,15 +14,15 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m21
+DEVICE_PATH := device/samsung/m30s
 
 # Inherit from the common tree
-include device/samsung/universal9611-common/BoardConfigCommon.mk
+include device/samsung/universal9611-common/BoardConfigCommon-p.mk
 # Inherit optional vendor BoardConfig
--include vendor/samsung/m21/BoardConfigVendor.mk
+-include vendor/samsung/m30s/BoardConfigVendor.mk
 
 # OTA Asserts
-TARGET_OTA_ASSERT_DEVICE := m21,m21dd,m21nsxx
+TARGET_OTA_ASSERT_DEVICE := m30s,m30sdd,m30snsxx
 
 ## Partitions Sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
@@ -33,10 +33,10 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 ## Camera
 SOONG_CONFIG_NAMESPACES += samsungCameraVars
 SOONG_CONFIG_samsungCameraVars += extra_ids
-SOONG_CONFIG_samsungCameraVars_extra_ids := 4,20,23,50,52
+SOONG_CONFIG_samsungCameraVars_extra_ids := 20,23,50,52
 
 ## Filesystem config
-include device/samsung/universal9611-common/fsconfig_dynamic.mk
+include device/samsung/universal9611-common/fsconfig_pie.mk
 
 ## Prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
