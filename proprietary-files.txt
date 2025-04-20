@@ -38,12 +38,12 @@ vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
 
-## V4L2 (FIMC-IS2) Firmware
+## V4L2 (FIMC-IS2) Firmware - from m30s
 vendor/firmware/fimc_is_lib.bin
 vendor/firmware/fimc_is_rta.bin
 vendor/firmware/mfc_fw.bin
 
-## Camera Firmware
+## Camera Firmware - from m30s
 vendor/firmware/setfile_4ha.bin
 vendor/firmware/setfile_gc5035.bin
 vendor/firmware/setfile_gm2.bin
@@ -60,7 +60,7 @@ vendor/firmware/rtdsp_param.bin
 ## DAP
 vendor/lib/soundfx/libswdap.so
 
-## Camera
+## Camera - from m30s
 vendor/lib/hw/camera.exynos9611.so
 vendor/lib/libexynoscamera3.so
 vendor/lib/libsecnativefeature.so

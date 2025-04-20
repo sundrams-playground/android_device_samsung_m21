@@ -14,13 +14,12 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/m21
+DEVICE_PATH := device/samsung/m30s
 
-TARGET_USES_SLSI_NFC := true
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9611-common/common.mk)
 # Inherit A51 blobs
-$(call inherit-product, vendor/samsung/m21/m21-vendor.mk)
+$(call inherit-product, vendor/samsung/m30s/m30s-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
@@ -30,9 +29,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # V32
 PRODUCT_PACKAGES += libutils-v32
-
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Audio configs
 PRODUCT_COPY_FILES += \
